@@ -10,6 +10,7 @@ module.exports = function (env) {
   const nodeEnv = env && env.prod ? 'production' : 'development';
   const isProd = nodeEnv === 'production';
 
+
   const plugins = [
     new webpack.optimize.CommonsChunkPlugin({
       name: 'vendor',
@@ -48,6 +49,16 @@ module.exports = function (env) {
     },
     module: {
       rules: [
+          {
+            test: /\.(png|jpg|gif)$/,
+            use: [
+              {
+                loader: 'file-loader',
+                options: {}  
+              }
+            ]
+          },
+
         {
           enforce: 'pre',
           test: /\.js$/,
@@ -110,7 +121,7 @@ module.exports = function (env) {
       ],
     },
     resolve: {
-      extensions: ['.webpack-loader.js', '.web-loader.js', '.loader.js', '.js', '.jsx', '.scss'],
+      extensions: ['.webpack-loader.js', '.web-loader.js', '.loader.js', '.js', '.jsx', '.scss', '.png'],
       modules: [
         path.resolve(__dirname, 'node_modules'),
         sourcePath
@@ -157,3 +168,4 @@ module.exports = function (env) {
     }
   };
 };
+
