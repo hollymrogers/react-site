@@ -1,11 +1,10 @@
 import React from 'react'
-import Logo from './youtube.png'
-import Thumbnail1 from './thumbnail1.png'
-import Thumbnail2 from './thumbnail2.png'
-import Thumbnail3 from './thumbnail3.png'
-import Thumbnail4 from './thumbnail4.png'
-import Title from './title'
-import Name from './name'
+import Logo from './images/youtube.png'
+import thumbnail1 from './images/thumbnail1.png'
+import thumbnail2 from './images/thumbnail2.png'
+import thumbnail3 from './images/thumbnail3.png'
+import thumbnail4 from './images/thumbnail4.png'
+import Video from './video'
 
 export default () => {
   return (
@@ -13,21 +12,17 @@ export default () => {
       <img src={Logo} alt="YouTube Logo" />
 
       <p>
-        <img src={Thumbnail1} alt="Thumbnail 1" />
-        <Title title={'Viral Police Chase'} />
-        <Name name={'Funny Vines'} />
+        <img src={thumbnail1} alt="Thumbnail 1" />
+        <Video title={'Viral Police Chase'} name={'Funny Vines'} />
 
-        <img src={Thumbnail2} alt="Thumbnail 2" />
-        <Title title={'Johnny English Strikes Again'} />
-        <Name name={'Universal Pictures'} />
+        <img src={thumbnail2} alt="Thumbnail 2" />
+        <Video title={'Johnny English Strikes Again'} name={'Universal Pictures'} />
 
-        <img src={Thumbnail3} alt="Thumbnail 3" />
-        <Title title={'Incredibles 2 Trailer'} />
-        <Name name={'Comicbook.com'} />
+        <img src={thumbnail3} alt="Thumbnail 3" />
+        <Video title={'Incredibles 2 Trailer'} name={'Comicbook.com'} />
 
-        <img src={Thumbnail4} alt="Thumbnail 4" />
-        <Title title={'Avatar 2'} />
-        <Name name={'Looper'} />
+        <img src={thumbnail4} alt="Thumbnail 4" />
+        <Video title={'Avatar 2'} name={'Looper'} />
       </p>
     </div>
   )
