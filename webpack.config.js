@@ -7,6 +7,7 @@ const sourcePath = path.join(__dirname, './src');
 const staticsPath = path.join(__dirname, './static');
 
 module.exports = function (env) {
+  
   const nodeEnv = env && env.prod ? 'production' : 'development';
   const isProd = nodeEnv === 'production';
 
