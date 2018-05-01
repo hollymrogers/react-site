@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default class videos extends React.Component {
+export default class Videos extends React.Component {
   render() {
     return (
       <div>
