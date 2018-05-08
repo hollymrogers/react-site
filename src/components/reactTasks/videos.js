@@ -3,6 +3,6 @@ import Video from './video'
 
 export default class Videos extends React.Component {
   render() {
-    return <div>{this.props.map((video, i) => <Video key={i} video={video} />)}</div>
+    return <div> _.map(this.props,(video, i) => <Video key={i} video={video}/>)}</div>
   }
 }
