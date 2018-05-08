@@ -4,19 +4,17 @@ import thumbnail1 from './images/thumbnail1.png'
 import thumbnail2 from './images/thumbnail2.png'
 import thumbnail3 from './images/thumbnail3.png'
 import thumbnail4 from './images/thumbnail4.png'
-import Video from './video'
+import Videos from './videos'
 import Category from './category'
 
 export default () => {
   return (
     <div>
       <img src={logo} alt="YouTube Logo" />
-      <h1>
-        <Category topic={'Entertainment'} type={'- Recommended for you'} />
-      </h1>
+      <Category topic={'Entertainment'} type={'- Recommended for you'} />
 
       <div>
-        <Video
+        <Videos
           uploads={[
             { name: 'Funny Vines', image: thumbnail1, title: 'Viral Police Chase', views: '2M Views', date: 'April 12th 2018' },
             { name: 'Universal Pictures', image: thumbnail2, title: 'Johnny English Strikes Again', views: '8.8M Views', date: 'April 19th 2018' },

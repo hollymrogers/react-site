@@ -4,9 +4,9 @@ export default class Category extends React.Component {
   render() {
     return (
       <div>
-        <p>
+        <h1>
           {this.props.topic} {this.props.type}
-        </p>
+        </h1>
       </div>
     )
   }

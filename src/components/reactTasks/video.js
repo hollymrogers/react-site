@@ -1,8 +1,15 @@
 import React from 'react'
-import VideoFromObject from './videoFromObject'
 
 export default class Video extends React.Component {
   render() {
-    return <div>{this.props.uploads.map((videos, i) => <VideoFromObject key={i} videos={videos} />)}</div>
+    return (
+      <div>
+        <img src={this.props.video.image} />
+        <p>{this.props.video.name}</p>
+        <p>{this.props.video.title}</p>
+        <p>{this.props.video.views}</p>
+        <p>{this.props.video.date}</p>
+      </div>
+    )
   }
 }
