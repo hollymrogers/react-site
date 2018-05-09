@@ -3,11 +3,9 @@ import Video from './video'
 
 export default class Videos extends React.Component {
   render() {
-  	return 
-
-  	<div> 
-  	_.map(this.props.uploads, (video, i) => <Video key={i} video={video} />)
-
-  	</div>
+  	const upload = _.map(this.props.uploads, (video, i) => <Video key={i} video={video} />)
+	return <div> {upload}  </div>
   }
 }
+
+
