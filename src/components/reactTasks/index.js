@@ -6,7 +6,7 @@ import thumbnail3 from './images/thumbnail3.png'
 import thumbnail4 from './images/thumbnail4.png'
 import Videos from './videos'
 import Category from './category'
-import Uploads from './upload'
+import Upload from './upload'
 
 export default () => {
   return (
@@ -15,8 +15,9 @@ export default () => {
       <Category topic={'Entertainment'} type={'- Recommended for you'} />
 
       <div>
-        <Videos Uploads />
+        <Videos uploads= {Upload} />
       </div>
     </div>
   )
 }
+
