@@ -15,7 +15,7 @@ export default () => {
       <Category topic={'Entertainment'} type={'- Recommended for you'} />
 
       <div>
-        <Videos uploads= {Upload} />
+        <Videos uploads = {Upload} />
       </div>
     </div>
   )
