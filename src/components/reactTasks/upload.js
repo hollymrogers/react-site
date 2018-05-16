@@ -1,7 +1,11 @@
 import React from 'react'
 
+import thumbnail1 from './images/thumbnail1.png'
+import thumbnail2 from './images/thumbnail2.png'
+import thumbnail3 from './images/thumbnail3.png'
+import thumbnail4 from './images/thumbnail4.png'
 
-export const Upload =
+export default Upload =
      
        [
           { name: 'Funny Vines', image: thumbnail1, title: 'Viral Police Chase', views: '2M Views', date: 'April 12th 2018' },
