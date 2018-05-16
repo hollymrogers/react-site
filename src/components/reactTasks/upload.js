@@ -1,5 +1,3 @@
-import React from 'react'
-
 import thumbnail1 from './images/thumbnail1.png'
 import thumbnail2 from './images/thumbnail2.png'
 import thumbnail3 from './images/thumbnail3.png'

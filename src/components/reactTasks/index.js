@@ -2,7 +2,7 @@ import React from 'react'
 import logo from './images/youtube.png'
 import Videos from './videos'
 import Category from './category'
-import Upload from './upload'
+import upload from './upload'
 
 export default () => {
   return (
@@ -11,7 +11,7 @@ export default () => {
       <Category topic={'Entertainment'} type={'- Recommended for you'} />
 
       <div>
-        <Videos uploads = {Upload} />
+        <Videos uploads = {upload} />
       </div>
     </div>
   )
