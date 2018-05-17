@@ -1,14 +1,16 @@
 import React from 'react'
 import logo from './images/youtube.png'
-import Videos from './videos'
 import Category from './category'
 import upload from './upload'
+import Video from './video'
 
 export default () => {
   return (
     <div>
       <img src={logo} alt="YouTube Logo" />
       <Category topic={'Entertainment'} type={'- Recommended for you'} />
+
+      {videos = _.map(this.props.uploads, (video, i) => <Video keys={i} video={video} />)}
 
       <div>
         <Videos uploads = {upload} />
