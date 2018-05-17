@@ -10,10 +10,8 @@ export default () => {
       <img src={logo} alt="YouTube Logo" />
       <Category topic={'Entertainment'} type={'- Recommended for you'} />
 
-      {_.map(upload, (video, i) => <Video keys ={i} video= {video} />)}
-
       <div>
-        <Videos Uploads = {upload} />
+        {_.map(upload, (video, i) => <Video keys ={i} video= {video} />)}
       </div>
     </div>
   )
